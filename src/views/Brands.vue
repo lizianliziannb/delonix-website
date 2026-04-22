@@ -1,46 +1,48 @@
 <script setup lang="ts">
 import { useI18n } from '../i18n'
+import zhMessages from '../i18n/zh'
 
 const { t } = useI18n()
 
+type BrandKey = keyof typeof zhMessages.brandItems
 const brands = [
   {
-    key: 'kaiyuanmingdu',
+    key: 'kaiyuanmingdu' as BrandKey,
     image: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUZ-AeorYAAUwizbionQ758.jpg',
     color: '#8B6914',
   },
   {
-    key: 'kaiyuanmingting',
+    key: 'kaiyuanmingting' as BrandKey,
     image: 'https://rc2.zihu.com/g5/M00/49/EE/CgAGbGlChmuAfUWcAAXR7R8iZU0044.jpg',
     color: '#6B3A2E',
   },
   {
-    key: 'manju',
+    key: 'manju' as BrandKey,
     image: 'https://rc2.zihu.com/g5/M00/42/CC/CgAGbGi6emSAAo9tABHxkDsccbM239.jpg',
     color: '#2E5A88',
   },
   {
-    key: 'monday',
+    key: 'monday' as BrandKey,
     image: 'https://rc2.zihu.com/g5/M00/2D/5C/CgAGbGc6p1OAa8ODAANTa7NhjFo771.jpg',
     color: '#1A1A2E',
   },
   {
-    key: 'fangwai',
+    key: 'fangwai' as BrandKey,
     image: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUBOAFA1eAARujHbcwiY174.jpg',
     color: '#3A5A40',
   },
   {
-    key: 'guantang',
+    key: 'guantang' as BrandKey,
     image: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUAeACpm_AARHJK8FneA943.jpg',
     color: '#5C3D2E',
   },
   {
-    key: 'fangcaodi',
+    key: 'fangcaodi' as BrandKey,
     image: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUKmAJojMAAV-F3Rfm_4153.jpg',
     color: '#4A7C59',
   },
   {
-    key: 'yiju',
+    key: 'yiju' as BrandKey,
     image: 'https://rc2.zihu.com/g4/M00/69/51/CgAG0mNLb4KAD8slAATYxn00GhA160.png',
     color: '#6B5B73',
   },

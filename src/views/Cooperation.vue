@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useI18n } from '../i18n'
+import zhMessages from '../i18n/zh'
 
 const { t } = useI18n()
 
@@ -18,15 +19,16 @@ const handleSubmit = () => {
 }
 
 /* ---- Franchise brand logos ---- */
+type BrandKey = keyof typeof zhMessages.brandItems
 const franchiseBrands = computed(() => [
-  { key: 'kaiyuanmingdu', logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUZ-AeorYAAUwizbionQ758.jpg' },
-  { key: 'kaiyuanmingting', logo: 'https://rc2.zihu.com/g5/M00/49/EE/CgAGbGlChmuAfUWcAAXR7R8iZU0044.jpg' },
-  { key: 'fangwai', logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUBOAFA1eAARujHbcwiY174.jpg' },
-  { key: 'guantang', logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUAeACpm_AARHJK8FneA943.jpg' },
-  { key: 'fangcaodi', logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUKmAJojMAAV-F3Rfm_4153.jpg' },
-  { key: 'manju', logo: 'https://rc2.zihu.com/g5/M00/42/CC/CgAGbGi6emSAAo9tABHxkDsccbM239.jpg' },
-  { key: 'monday', logo: 'https://rc2.zihu.com/g5/M00/2D/5C/CgAGbGc6p1OAa8ODAANTa7NhjFo771.jpg' },
-  { key: 'yiju', logo: 'https://rc2.zihu.com/g4/M00/69/51/CgAG0mNLb4KAD8slAATYxn00GhA160.png' },
+  { key: 'kaiyuanmingdu' as BrandKey, logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUZ-AeorYAAUwizbionQ758.jpg' },
+  { key: 'kaiyuanmingting' as BrandKey, logo: 'https://rc2.zihu.com/g5/M00/49/EE/CgAGbGlChmuAfUWcAAXR7R8iZU0044.jpg' },
+  { key: 'fangwai' as BrandKey, logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUBOAFA1eAARujHbcwiY174.jpg' },
+  { key: 'guantang' as BrandKey, logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUAeACpm_AARHJK8FneA943.jpg' },
+  { key: 'fangcaodi' as BrandKey, logo: 'https://rc2.zihu.com/g4/M00/69/48/CgAG0mNJUKmAJojMAAV-F3Rfm_4153.jpg' },
+  { key: 'manju' as BrandKey, logo: 'https://rc2.zihu.com/g5/M00/42/CC/CgAGbGi6emSAAo9tABHxkDsccbM239.jpg' },
+  { key: 'monday' as BrandKey, logo: 'https://rc2.zihu.com/g5/M00/2D/5C/CgAGbGc6p1OAa8ODAANTa7NhjFo771.jpg' },
+  { key: 'yiju' as BrandKey, logo: 'https://rc2.zihu.com/g4/M00/69/51/CgAG0mNLb4KAD8slAATYxn00GhA160.png' },
 ])
 
 /* ---- Six Advantages ---- */
