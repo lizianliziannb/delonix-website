@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --repo git@github.com:lizianliziannb/delonix-website.git"
   },
+  "homepage": "https://lizianliziannb.github.io/delonix-website/",
   "dependencies": {
     "swiper": "^11.2.10",
     "vue": "^3.5.32",

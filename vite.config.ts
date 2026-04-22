@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  base: "/SuperDoctor/",
+  base: "/delonix-website/`",
 });
