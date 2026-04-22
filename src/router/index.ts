@@ -1,42 +1,42 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory("/delonix-website/"),
   routes: [
     {
-      path: '/',
-      name: 'Home',
-      component: () => import('../views/Home.vue'),
+      path: "/",
+      name: "Home",
+      component: () => import("../views/Home.vue"),
     },
     {
-      path: '/about',
-      name: 'About',
-      component: () => import('../views/About.vue'),
+      path: "/about",
+      name: "About",
+      component: () => import("../views/About.vue"),
     },
     {
-      path: '/brands',
-      name: 'Brands',
-      component: () => import('../views/Brands.vue'),
+      path: "/brands",
+      name: "Brands",
+      component: () => import("../views/Brands.vue"),
     },
     {
-      path: '/advantages',
-      name: 'Advantages',
-      component: () => import('../views/Advantages.vue'),
+      path: "/advantages",
+      name: "Advantages",
+      component: () => import("../views/Advantages.vue"),
     },
     {
-      path: '/news',
-      name: 'News',
-      component: () => import('../views/News.vue'),
+      path: "/news",
+      name: "News",
+      component: () => import("../views/News.vue"),
     },
     {
-      path: '/cooperation',
-      name: 'Cooperation',
-      component: () => import('../views/Cooperation.vue'),
+      path: "/cooperation",
+      name: "Cooperation",
+      component: () => import("../views/Cooperation.vue"),
     },
   ],
   scrollBehavior() {
-    return { top: 0 }
+    return { top: 0 };
   },
-})
+});
 
-export default router
+export default router;
